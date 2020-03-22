@@ -271,7 +271,7 @@ projects = [
     {
       "name": "Проект благоустрою площі С. Бандери з ескізом сіті-холу в Тернополі",
       "desc": "Проект благоустрою площі Степана Бандери з ескізом нової будівлі мерії (сіті-холу) в Тернополі",
-      "imgPath": "ternopilCityHall,
+      "imgPath": "ternopilCityhall03",
       "rubric": "#portfolio-urbdes",
       "columnId": "#ranishe",
       "photos": [
@@ -291,7 +291,7 @@ projects = [
     {
       "name": "Інтер’єр однокімнатної квартири у ЖК «Комфорт-таун» у Києві",
       "desc": "Інтер’єр однокімнатної квартири у ЖК «Комфорт-таун» у Києві",
-      "imgPath": "comfortTownInterier04",
+      "imgPath": "ComfortTownInterier04",
       "rubric": "#portfolio-intdes",
       "columnId": "#ranishe",
       "photos": [
