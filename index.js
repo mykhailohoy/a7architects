@@ -75,7 +75,7 @@ $(function () {
 function createProjectCard(obj) {
 	var slides;
 	for (let e in obj.photos) {
-		slides += `<img src="img/projects/${obj.imgPath}/${obj.photos[e]}" load="lazy">`
+		slides += `<img src="img/projects/${obj.imgPath}/${obj.photos[e]}" loading="lazy">`
 	}
 
 	/* $.ajax({
