@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <script>document.cookie='resolution='+Math.max(screen.width,screen.height)+'; path=/';</script>
+    <!--jquery CDN-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" async></script>
+    <!-- jQuery local fallback -->
+    <script>window.jQuery || document.write('<script src="jQuery/jquery-3.4.1.js"><\/script>')</script>
+    <title>
+        a7 architects
+    </title>
+    <style>
+        #loader {
+            width: 100% !important;
+            height: 100% !important;
+            z-index: 10001;
+            background: #333;
+            position: fixed;
+            top: 0;
+            left: 0;
+            text-align: center;
+            /* padding-top: 40vh; */
+            line-height: 100vh;
+        }
+        #loader img {
+            height: 80px;
+            width: 80px;
+        }
+    </style>
+    <script>
+        $(window).on("load", function () {
+            $("#loader").fadeOut("slow")
+        })
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS local fallback -->
+    <script>
+        var test = document.createElement("div")
+        test.className = "hidden d-none"
+
+        document.head.appendChild(test)
+        var cssLoaded = window.getComputedStyle(test).display === "none"
+        document.head.removeChild(test)
+
+        if (!cssLoaded) {
+            var link = document.createElement("link");
+
+            link.type = "text/css";
+            link.rel = "stylesheet";
+            link.href = "bootstrap/bootstrap.min.css";
+
+            document.head.appendChild(link);
+        }
+    </script>
+    <link href="index.css" rel="stylesheet" type="text/css">
+</head>
+
+<body data-offset="100">
+    <div id="loader">
+        <img src="img/chunk.gif" alt="Loading..."></div>
+    </div>
+    <div class="content">
+        <header>
+            <nav id="navbar" class="navbar navbar-light bg-dark">
+                <div class="logo">
+                    <span>A7</span><span> architects</span>
+                </div>
+                <div class="languages">
+                    <a class="plain-a active">ua</a>/<a href="../en/index.html" class="plain-a">en</a>
+                </div>
+            </nav>
+            <hr>
+        </header>
+        <noscript>
+            <h4>
+                <pre>
+
+
+
+                От халепа!</pre>
+            </h4>
+            <p>Схоже на те, що в вашому браузері вимкнений JavaScript. Для того, щоб переглянути весь сайт, ввімкнути
+                його в налаштуваннях.</p>
+        </noscript>
+
+
+        <div class="fab-box">
+            <div class="fabs">
+                <button class="btn btn-primary fab fab-up" data-portfolio="#portfolio-arch"><img
+                        src="img/iconfinder_arrow-up_3313575.svg"></button>
+                <button class="btn btn-primary fab fab-down" data-portfolio="#portfolio-arch"><img
+                        src="img/iconfinder_arrow-up_3313575.svg"></button>
+            </div>
+
+        </div>
+        <section class="cover" id="pro-nas">
+
+
+            <div class="slider cover-slider">
+                <div class="slide-wrapper">
+                    <img src="img/projects/zhkPasichna9/zhkPasichna9_photo5.jpg" alt="зображення споруди">
+                    <div class="slide-button-wrapper">
+                        <button class="btn btn-outline-primary btn-sm toggle-portfolio go-to-project"
+                            data-portfolio="#portfolio-intdes" data-projectid="#zhkPasichna9" aria-pressed="true">Переглянути
+                            »</button>
+                    </div>
+                </div>
+                <div class="slide-wrapper">
+                    <img src="img/projects/protec9/protec9_photo2.jpg" alt="зображення споруди">
+                    <div class="slide-button-wrapper">
+                        <button class="btn btn-outline-primary btn-sm toggle-portfolio go-to-project"
+                            data-portfolio="#portfolio-intdes" data-projectid="#protec9" aria-pressed="true">Переглянути
+                            »</button>
+                    </div>
+                </div>
+                <div class="slide-wrapper">
+                    <img src="img/projects/karpatskaDzherelna9/karpatskaDzherelna9_photo07.jpg" alt="зображення споруди">
+                    <div class="slide-button-wrapper">
+                        <button class="btn btn-outline-primary btn-sm toggle-portfolio go-to-project"
+                            data-portfolio="#portfolio-intdes" data-projectid="#karpatskaDzherelna9" aria-pressed="true">Переглянути
+                            »</button>
+                    </div>
+                </div>
+                <div class="slide-wrapper">
+                    <img src="img/projects/mistTernopil9/mistTernopil9_photo2.jpg" alt="зображення споруди">
+                    <div class="slide-button-wrapper">
+                        <button class="btn btn-outline-primary btn-sm toggle-portfolio go-to-project"
+                            data-portfolio="#portfolio-intdes" data-projectid="#mistTernopil9" aria-pressed="true">Переглянути
+                            »</button>
+                    </div>
+                </div>
+                <div class="slide-wrapper">
+                    <img src="img/projects/metropolis9/logo.jpg" alt="зображення споруди">
+                    <div class="slide-button-wrapper">
+                        <button class="btn btn-outline-primary btn-sm toggle-portfolio go-to-project"
+                            data-portfolio="#portfolio-intdes" data-projectid="#metropolis9" aria-pressed="true">Переглянути
+                            »</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <main class="container-fluid">
+
+            <section id="spec">
+                <div class="icon-and-text">
+                    <!-- <img src="img/projects.svg" alt=""> -->
+                    <div>
+                        <h3>Архітектурне проєктування</h3>
+                        <p>Житлові, громадські, виробничі об'єкти</p>
+                        <button class="btn btn-outline-primary toggle-portfolio go-to-rubric"
+                            data-portfolio="#portfolio-arch" data-rubricid="#portfolio-arch">Показати »</button>
+                    </div>
+                </div>
+                <div class="icon-and-text">
+                    <!-- <img src="img/interior.svg" alt=""> -->
+                    <div>
+                        <h3>Дизайн інтер'єрів</h3>
+                        <p>Усі види приміщень</p>
+                        <button class="btn btn-outline-primary toggle-portfolio go-to-rubric"
+                            data-portfolio="#portfolio-intdes" data-rubricid="#portfolio-intdes">Показати »</button>
+                    </div>
+                    <!-- <img src="img/interior.svg" alt=""> -->
+                </div>
+                <div class="icon-and-text">
+                    <!-- <img src="img/urban.svg" alt=""> -->
+                    <div>
+                        <h3>Урбаністичний дизайн</h3>
+                        <p>Зони рекреації, благоустрій територій</p>
+                        <button class="btn btn-outline-primary toggle-portfolio go-to-rubric"
+                            data-portfolio="#portfolio-urbdes" data-rubricid="#portfolio-urbdes">Показати »</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="jumbotron matrix-wrapper">
+
+                <div class="checkboxes-wrapper">
+                    <div class="checkbox-wrapper">
+                        <label class="checkbox bounce">
+                            <input type="checkbox" class="matrix-checkbox" data-rubrictoshow="#portfolio-arch" checked>
+                            <svg viewBox="0 0 21 21">
+                                <polyline points="5 10.75 8.5 14.25 16 6"></polyline>
+                            </svg>
+                        </label>
+                        <p>Архітектурне проєктування</p>
+                    </div>
+
+                    <div class="checkbox-wrapper">
+                        <label class="checkbox bounce">
+                            <input type="checkbox" class="matrix-checkbox" data-rubrictoshow="#portfolio-intdes"
+                                checked>
+                            <svg viewBox="0 0 21 21">
+                                <polyline points="5 10.75 8.5 14.25 16 6"></polyline>
+                            </svg>
+                        </label>
+                        <p>Дизайн інтер'єрів</p>
+                    </div>
+                    <div class="checkbox-wrapper">
+                        <label class="checkbox bounce">
+                            <input type="checkbox" class="matrix-checkbox" data-rubrictoshow="#portfolio-urbdes"
+                                checked>
+                            <svg viewBox="0 0 21 21">
+                                <polyline points="5 10.75 8.5 14.25 16 6"></polyline>
+                            </svg>
+                        </label>
+                        <p>Урбаністичний дизайн</p>
+                    </div>
+
+                </div>
+                <div id="matrix">
+                    <div class="projects-column" id="ranishe">
+                        <p>Раніше</p>
+                    </div>
+                    <div class="projects-column" id="y2015">
+                        <p>2015</p>
+                    </div>
+                    <div class="projects-column" id="y2016">
+                        <p>2016</p>
+                    </div>
+                    <div class="projects-column" id="y2017">
+                        <p>2017</p>
+                    </div>
+                    <div class="projects-column" id="y2018">
+                        <p>2018</p>
+                    </div>
+                    <div class="projects-column" id="y2019">
+                        <p>2019</p>
+                    </div>
+                    <div class="projects-column" id="y2020">
+                        <p>2020</p>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section id="all-projects">
+                <div class="container rubric" id="portfolio-arch">
+                    <h2 class="rubric-heading">Архітектурне проєктування</h2>
+                </div>
+                <div class="container rubric" id="portfolio-intdes">
+                    <h2 class="rubric-heading">Дизайн інтер'єрів</h2>
+                </div>
+                <div class="container rubric" id="portfolio-urbdes">
+                    <h2 class="rubric-heading">Урбаністичний дизайн</h2>
+                </div>
+            </section>
+
+            <!--         <section id="roztashuvannia">
+            <div class="container">
+                <h2>Розташування</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2573.5971985277315!2d24.008864!3d49.8312354!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add7e88b66f69%3A0x16bd1b987905141a!2s58A%2C%20Henerala%20Chuprynky%20St%2C%2058%D0%90%2C%20L&#39;viv%2C%20L&#39;vivs&#39;ka%20oblast%2C%2079000!5e0!3m2!1sen!2sua!4v1577370268707!5m2!1sen!2sua" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+        </section> -->
+
+        </main>
+
+
+        <!--form-->
+        <footer class="page-footer font-small">
+            <script type="text/javascript">var submitted = false;</script>
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+                onload="if(submitted) {$('form')[0].reset()}"></iframe>
+            <div class="contacts">
+                <div class="form-wrapper container">
+                    <form novalidate
+                        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfSkC5gwmDIBhlWTPUnocN9r5uBco8vr3RRvWbVkxgbwGxoBg/formResponse"
+                        target="hidden_iframe" onsubmit="submitted=true;" method="POST" id="mG61Hd">
+                        <div class="freebirdFormviewerViewFormCard exportFormCard">
+                            <div class="freebirdFormviewerViewFormContent">
+                                <div class="freebirdFormviewerViewNoPadding">
+                                    <div class="freebirdFormviewerViewHeaderHeader exportHeader">
+                                        <div
+                                            class="freebirdFormviewerViewHeaderThemeStripe freebirdSolidBackground exportThemeStripe">
+                                        </div>
+                                        <div class="form-heading">
+                                            <h2>Напишіть нам</h2>
+                                        </div>
+
+                                    </div>
+                                    <div class="freebirdFormviewerViewItemList" role="list">
+                                        <div role="listitem"
+                                            class="freebirdFormviewerViewItemsItemItem freebirdFormviewerViewItemsTextTextItem freebirdFormviewerViewEmailCollectionField"
+                                            jsname="ibnC6b" jscontroller="rDGJeb"
+                                            jsaction="sPvj8e:e4JwSe,Dlbleb;O22p3e:e4JwSe,F0zejc;" data-required="true"
+                                            data-validation-operation="102" data-validation-type="2">
+                                            <div class="freebirdFormviewerViewItemsItemItemHeader">
+                                                <div class="freebirdFormviewerViewItemsItemItemTitleContainer">
+                                                    <div class="freebirdFormviewerViewItemsItemItemTitle exportItemTitle freebirdCustomFont question"
+                                                        id="i2" dir="auto" role="heading" aria-level="3"
+                                                        aria-describedby="i3">
+                                                        Електронна пошта
+                                                        <span id="i3"
+                                                            class="freebirdFormviewerViewItemsItemRequiredAsterisk"
+                                                            aria-label="Required question"></span></div>
+                                                </div>
+                                            </div>
+                                            <div class="freebirdFormviewerViewItemsTextItemWrapper">
+                                                <div class="quantumWizTextinputPaperinputEl freebirdFormviewerViewItemsTextShortText freebirdFormviewerViewItemsTextEmail freebirdThemedInput modeLight"
+                                                    jscontroller="pxq3x"
+                                                    jsaction="clickonly:KjsqPd; focus:Jt1EX; blur:fpfTEe; input:Lg5SV"
+                                                    jsshadow="" jsname="W85ice" title="Email address">
+                                                    <div class="quantumWizTextinputPaperinputMainContent exportContent">
+                                                        <div
+                                                            class="quantumWizTextinputPaperinputContentArea exportContentArea">
+                                                            <div class="quantumWizTextinputPaperinputInputArea"><input
+                                                                    type="email"
+                                                                    class="quantumWizTextinputPaperinputInput exportInput"
+                                                                    jsname="YPqjbf" autocomplete="email" tabindex="0"
+                                                                    aria-label="Your email address" name="emailAddress"
+                                                                    value="" required=""
+                                                                    pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$"
+                                                                    dir="auto" data-initial-dir="auto"
+                                                                    data-initial-value="">
+                                                                <div class="error">
+
+                                                                </div>
+
+                                                            </div>
+                                                            <div
+                                                                class="quantumWizTextinputPaperinputUnderline exportUnderline">
+                                                            </div>
+                                                            <div jsname="XmnwAc"
+                                                                class="quantumWizTextinputPaperinputFocusUnderline exportFocusUnderline">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="quantumWizTextinputPaperinputCounterErrorHolder">
+                                                        <div jsname="ty6ygf"
+                                                            class="quantumWizTextinputPaperinputHint exportHint">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div jsname="XbIQze" class="freebirdFormviewerViewItemsItemErrorMessage"
+                                                id="i1" role="alert">
+                                            </div>
+                                        </div>
+                                        <div class="freebirdFormviewerViewNumberedItemContainer">
+                                            <div role="listitem"
+                                                class="freebirdFormviewerViewItemsItemItem freebirdFormviewerViewItemsTextTextItem"
+                                                jsname="ibnC6b" jscontroller="rDGJeb"
+                                                jsaction="sPvj8e:e4JwSe,Dlbleb;O22p3e:e4JwSe,F0zejc;"
+                                                data-required="true" data-item-id="993127986">
+                                                <div class="freebirdFormviewerViewItemsItemItemHeader">
+                                                    <div class="freebirdFormviewerViewItemsItemItemTitleDescContainer">
+                                                        <div class="freebirdFormviewerViewItemsItemItemTitleContainer">
+                                                            <div class="freebirdFormviewerViewItemsItemItemTitle exportItemTitle freebirdCustomFont question"
+                                                                role="heading" aria-level="3"
+                                                                aria-describedby="i.desc.993127986 i6">
+                                                                Ім'я
+                                                                <span
+                                                                    class="freebirdFormviewerViewItemsItemRequiredAsterisk"
+                                                                    aria-label="Required question"></span></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="freebirdFormviewerViewItemsTextItemWrapper">
+                                                    <div class="quantumWizTextinputPaperinputEl freebirdFormviewerViewItemsTextShortText freebirdThemedInput modeLight"
+                                                        jscontroller="pxq3x"
+                                                        jsaction="clickonly:KjsqPd; focus:Jt1EX; blur:fpfTEe; input:Lg5SV"
+                                                        jsshadow="" jsname="W85ice">
+                                                        <div
+                                                            class="quantumWizTextinputPaperinputMainContent exportContent">
+                                                            <div
+                                                                class="quantumWizTextinputPaperinputContentArea exportContentArea">
+                                                                <div class="quantumWizTextinputPaperinputInputArea">
+                                                                    <input type="text"
+                                                                        class="quantumWizTextinputPaperinputInput exportInput"
+                                                                        jsname="YPqjbf" autocomplete="off" tabindex="0"
+                                                                        aria-label="Ім&amp;#39;я"
+                                                                        aria-describedby="i.desc.993127986 i.err.993127986"
+                                                                        name="entry.1724483296" value="" required=""
+                                                                        dir="auto" data-initial-dir="auto"
+                                                                        data-initial-value="">
+                                                                    <div class="error">
+
+                                                                    </div>
+
+                                                                </div>
+                                                                <div
+                                                                    class="quantumWizTextinputPaperinputUnderline exportUnderline">
+                                                                </div>
+                                                                <div jsname="XmnwAc"
+                                                                    class="quantumWizTextinputPaperinputFocusUnderline exportFocusUnderline">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="quantumWizTextinputPaperinputCounterErrorHolder">
+                                                            <div jsname="ty6ygf"
+                                                                class="quantumWizTextinputPaperinputHint exportHint">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div jsname="XbIQze" class="freebirdFormviewerViewItemsItemErrorMessage"
+                                                    id="i.err.993127986" role="alert"></div>
+                                            </div>
+                                        </div>
+                                        <div class="freebirdFormviewerViewNumberedItemContainer">
+                                            <div role="listitem"
+                                                class="freebirdFormviewerViewItemsItemItem freebirdFormviewerViewItemsTextTextItem"
+                                                jsname="ibnC6b" jscontroller="rDGJeb"
+                                                jsaction="sPvj8e:e4JwSe,Dlbleb;O22p3e:e4JwSe,F0zejc;"
+                                                data-required="true" data-item-id="1143055830">
+                                                <div class="freebirdFormviewerViewItemsItemItemHeader">
+                                                    <div class="freebirdFormviewerViewItemsItemItemTitleDescContainer">
+                                                        <div class="freebirdFormviewerViewItemsItemItemTitleContainer">
+                                                            <div class="freebirdFormviewerViewItemsItemItemTitle exportItemTitle freebirdCustomFont question"
+                                                                role="heading" aria-level="3"
+                                                                aria-describedby="i.desc.1143055830 i9">
+                                                                Прізвище <span
+                                                                    class="freebirdFormviewerViewItemsItemRequiredAsterisk"
+                                                                    aria-label="Required question"></span></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="freebirdFormviewerViewItemsTextItemWrapper">
+                                                    <div class="quantumWizTextinputPaperinputEl freebirdFormviewerViewItemsTextShortText freebirdThemedInput modeLight"
+                                                        jscontroller="pxq3x"
+                                                        jsaction="clickonly:KjsqPd; focus:Jt1EX; blur:fpfTEe; input:Lg5SV"
+                                                        jsshadow="" jsname="W85ice">
+                                                        <div
+                                                            class="quantumWizTextinputPaperinputMainContent exportContent">
+                                                            <div
+                                                                class="quantumWizTextinputPaperinputContentArea exportContentArea">
+                                                                <div class="quantumWizTextinputPaperinputInputArea">
+                                                                    <input type="text"
+                                                                        class="quantumWizTextinputPaperinputInput exportInput"
+                                                                        jsname="YPqjbf" autocomplete="off" tabindex="0"
+                                                                        aria-label="Прізвище"
+                                                                        aria-describedby="i.desc.1143055830 i.err.1143055830"
+                                                                        name="entry.533522972" value="" required=""
+                                                                        dir="auto" data-initial-dir="auto"
+                                                                        data-initial-value="">
+                                                                    <div class="error">
+
+                                                                    </div>
+                                                                </div>
+                                                                <div
+                                                                    class="quantumWizTextinputPaperinputUnderline exportUnderline">
+                                                                </div>
+                                                                <div jsname="XmnwAc"
+                                                                    class="quantumWizTextinputPaperinputFocusUnderline exportFocusUnderline">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="quantumWizTextinputPaperinputCounterErrorHolder">
+                                                            <div jsname="ty6ygf"
+                                                                class="quantumWizTextinputPaperinputHint exportHint">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div jsname="XbIQze" class="freebirdFormviewerViewItemsItemErrorMessage"
+                                                    id="i.err.1143055830" role="alert"></div>
+                                            </div>
+                                        </div>
+                                        <div class="freebirdFormviewerViewNumberedItemContainer">
+                                            <div role="listitem"
+                                                class="freebirdFormviewerViewItemsItemItem freebirdFormviewerViewItemsTextTextItem"
+                                                jsname="ibnC6b" jscontroller="rDGJeb"
+                                                jsaction="sPvj8e:e4JwSe,Dlbleb;O22p3e:e4JwSe,F0zejc;"
+                                                data-required="true" data-item-id="1392711065">
+                                                <div class="freebirdFormviewerViewItemsItemItemHeader">
+                                                    <div class="freebirdFormviewerViewItemsItemItemTitleDescContainer">
+                                                        <div class="freebirdFormviewerViewItemsItemItemTitleContainer">
+                                                            <div class="freebirdFormviewerViewItemsItemItemTitle exportItemTitle freebirdCustomFont question"
+                                                                role="heading" aria-level="3"
+                                                                aria-describedby="i.desc.1392711065 i12">
+                                                                Ваш
+                                                                коментар <span
+                                                                    class="freebirdFormviewerViewItemsItemRequiredAsterisk"
+                                                                    aria-label="Required question"></span></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="quantumWizTextinputPapertextareaEl modeLight freebirdFormviewerViewItemsTextLongText freebirdThemedInput"
+                                                    jscontroller="pxq3x"
+                                                    jsaction="clickonly:KjsqPd; focus:Jt1EX; blur:fpfTEe; input:Lg5SV"
+                                                    jsshadow="" jsname="W85ice">
+                                                    <div
+                                                        class="quantumWizTextinputPapertextareaMainContent exportContent">
+
+                                                        <div
+                                                            class="quantumWizTextinputPapertextareaContentArea exportContentArea">
+                                                            <textarea
+                                                                class="quantumWizTextinputPapertextareaInput exportTextarea"
+                                                                jsname="YPqjbf" data-rows="1" tabindex="0"
+                                                                aria-label="Ваш коментар" jscontroller="gZjhIf"
+                                                                jsaction="input:Lg5SV;ti6hGc:XMgOHc;rcuQ6b:WYd;"
+                                                                required="" name="entry.448414739" dir="auto"
+                                                                data-initial-dir="auto" data-initial-value=""
+                                                                aria-describedby="i.desc.1392711065 i.err.1392711065"></textarea>
+                                                            <div class="error">
+
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="quantumWizTextinputPapertextareaUnderline exportUnderline">
+                                                        </div>
+                                                        <div jsname="XmnwAc"
+                                                            class="quantumWizTextinputPapertextareaFocusUnderline exportFocusUnderline">
+                                                        </div>
+                                                    </div>
+                                                    <div class="quantumWizTextinputPapertextareaCounterErrorHolder">
+                                                        <div jsname="ty6ygf"
+                                                            class="quantumWizTextinputPapertextareaHint exportHint">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div jsname="XbIQze" class="freebirdFormviewerViewItemsItemErrorMessage"
+                                                    id="i.err.1392711065" role="alert"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="freebirdFormviewerViewNavigationNavControls" jscontroller="lSvzH"
+                                        jsaction="rcuQ6b:npT2md;JIbuQc:Gl574d(QR6bsb),V3upec(GeGHKb),HiUbje(M2UYVd),NPBnCf(OCpkoe);"
+                                        data-shuffle-seed="-2464140720487673263"
+                                        data-should-execute-invisible-captcha-challenge="false"
+                                        data-is-receipt-checked="false">
+
+                                    </div><input type="hidden" name="fvv" value="1"><input type="hidden"
+                                        name="draftResponse" value="[null,null,&quot;-2464140720487673263&quot;]
+                "><input type="hidden" name="pageHistory" value="0"><input type="hidden" name="fbzx"
+                                        value="-2464140720487673263">
+                                </div>
+                            </div>
+                            <!--prevent implicit form submition-->
+                            <button type="submit" disabled style="display: none;" aria-hidden="true"></button>
+                            <button type="submit" class="btn btn-outline-primary submit-btn">Надіслати</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="other-contacts">
+                    <h2>Інші контакти</h2>
+                    contact@sim.lviv.ua<br>
+                    <a class="tel" href="tel:+380681234567">+380681234567</a><br>
+                    <address>
+                        вулиця Чупринки, 58а,<br>
+                        79059,<br>
+                        м. Львів<br>
+                        УКРАЇНА
+                    </address>
+                </div>
+            </div>
+
+            <div class="footer-copyright text-center py-3">
+                <p>© 2020: A7 architects</p>
+                <p>Розробка: mykhailo.hoy@gmail.com</p>
+                <!--to make a link or not to make a link?-->
+            </div>
+        </footer>
+    </div>
+</body>
+
+<!--popper.js-->
+<script src="popper-js/popper.min.js"></script>
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+<!-- Bootstrap JS local fallback -->
+<script>
+    if (typeof ($.fn.modal) === 'undefined') { document.write('<script src="bootstrap/bootstrap.min.js"><\/script>') }
+</script>
+
+<!--slick-->
+<script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+<!--backgroundCheck-->
+<script src="backgroundCheck/backgroundCheck.js"></script>
+<script src="extensions/autosize.min.js"></script>
+<script src="database.js"></script>
+<script src=index.js> </script>
+<script src="contact-form.js"></script>
+
+</html>

@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap&subset=cyrillic-ext');
+html, body {
+    font-family: 'Open Sans', serif;
+    font-weight: 300;
+}
+
+:root {
+    --mc: rgb(38, 22, 87);
+    /*main color*/
+}
+
+.submit-btn {
+    border-radius: 2px;
+    border-color: var(--mc) !important;
+    color: var(--mc);
+    font-weight: normal;
+}
+
+.submit-btn:hover, .submit-btn:focus, .btn:active {
+    background-color: var(--mc) !important;
+    color: #ddd !important;
+}
+
+.submit-btn:focus, .submit-btn:active {
+    box-shadow: 0 0 0 0.2rem rgba(31, 18, 71, .5) !important;
+}
+textarea {
+    height: 3rem;
+    min-height: 5rem;
+    max-height: 60vh;
+}
