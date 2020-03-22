@@ -82,7 +82,7 @@ function createProjectCard(obj) {
 		success: function (data) {
 			for (let e in data) {
 				if (data[e] != "logoicon.jpg") {
-					slides += `<img src="img/projects/${obj.imgPath}/${data[e]}">`
+					slides += `<img src="img/projects/${obj.imgPath}/${data[e]}/">`
 				}
 			}
 		}
