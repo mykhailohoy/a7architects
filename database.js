@@ -16,7 +16,7 @@
     {
         name: "Проект благоустрою площі С. Бандери з ескізом сіті-холу в Тернополі",
         desc: "Проект благоустрою площі Степана Бандери з ескізом нової будівлі мерії (сіті-холу) в Тернополі",
-        imgPath: "ternopilCityHall03",
+        imgPath: "ternopilCityHall,
         rubric: "#portfolio-urbdes",
         columnId: "#ranishe"
     },
@@ -271,7 +271,7 @@ projects = [
     {
       "name": "Проект благоустрою площі С. Бандери з ескізом сіті-холу в Тернополі",
       "desc": "Проект благоустрою площі Степана Бандери з ескізом нової будівлі мерії (сіті-холу) в Тернополі",
-      "imgPath": "ternopilCityHall03",
+      "imgPath": "ternopilCityHall,
       "rubric": "#portfolio-urbdes",
       "columnId": "#ranishe",
       "photos": [
