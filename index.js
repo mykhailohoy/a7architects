@@ -74,19 +74,22 @@ $(function () {
 
 function createProjectCard(obj) {
 	var slides;
+	for (let e in obj.photos) {
+		slides += `<img src="img/projects/${obj.imgPath}/${obj.photos[e]}">`
+	}
 
-	$.ajax({
-		url: `img/projects/${obj.imgPath}`,
+	/* $.ajax({
+		url: `img/projects/${obj.imgPath}/`,
 		async: false,
 		dataType: 'json',
 		success: function (data) {
 			for (let e in data) {
 				if (data[e] != "logoicon.jpg") {
-					slides += `<img src="img/projects/${obj.imgPath}/${data[e]}/">`
+					slides += `<img src="img/projects/${obj.imgPath}/${data[e]}">`
 				}
 			}
 		}
-	});
+	}); */
 
 	let id = obj.imgPath; //taking path to logo image for identifier of a single project; dropping off image extension
 	let element = `<div class="projectCard" id=${id}>
@@ -171,18 +174,7 @@ $(".slick-current").on("click", function () {
 /* let display = "all"; */
 
 
-//this is background cheecker that changes color of gallery controls
-//see http://www.kennethcachia.com/background-check/index.html
-BackgroundCheck.init({
-	targets: '.slick-arrow, #pro-nas .btn-outline-primary',
-	images: '.slick-slide img, .carousel-item img'
-})
-$(".slider").on("afterChange", function (e, slick, currentSlide) {
-	BackgroundCheck.refresh();
-})
-$(".carousel").on("slid.bs.carousel", function () {
-	BackgroundCheck.refresh();
-})
+
 
 var alreadySlid = false;
 /* $("#spec .toggle-portfolio").on("click", function () { //if inside spec
@@ -362,4 +354,66 @@ $(".go-to-rubric").on("click", function () {
 	$('html, body').animate({
 		scrollTop: $(rubricId).offset().top + 50
 	}, 0); //optimise through onclick attr instead of class
+})
+
+
+
+
+
+
+
+/* for (let e in projects) {
+	path = projects[e].imgPath;
+	
+	var sources;
+	$.ajax({
+		url: `img/projects/${path}/`,
+		async: false,
+		dataType: 'json',
+		success: function (data) {
+			length = data.length;
+		}
+	});
+	var names = {};
+	for (let i = 1; i <= length; i++) {
+		if (`${path}_photo${i}` != undefined) {
+			names[path] += `${path}_photo${i}`
+		}
+	}
+}
+console.log(names) */
+
+/* for (let i in projects) {
+	let obj = projects[i];
+	var sources = [];
+	$.ajax({
+		url: `img/projects/${obj.imgPath}`,
+		async: false,
+		dataType: 'json',
+		success: function (data) {
+			for (let e in data) {
+				if (data[e] != "logoicon.jpg") {
+					sources.push(data[e])
+				}
+			}
+		}
+	});
+  obj.photos = sources;
+}
+
+
+console.log(projects); */
+
+
+//this is background cheecker that changes color of gallery controls
+//see http://www.kennethcachia.com/background-check/index.html
+BackgroundCheck.init({
+	targets: '.slick-arrow, #pro-nas .btn-outline-primary',
+	images: '.slick-slide img, .carousel-item img'
+})
+$(".slider").on("afterChange", function (e, slick, currentSlide) {
+	BackgroundCheck.refresh();
+})
+$(".carousel").on("slid.bs.carousel", function () {
+	BackgroundCheck.refresh();
 })
